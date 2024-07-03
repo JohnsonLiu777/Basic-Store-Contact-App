@@ -45,7 +45,7 @@ const simpanContact = (nama,email,noHp) =>{
     const contact = {nama, noHp, email}
     // const fileBuffer = fs.readFileSync(filePath,'utf-8');
     // const contacs = JSON.parse(fileBuffer);
-    const contacs = loadContact;
+    const contacs = loadContact();
 
     //cek Duplikat
     const duplikat = contacs.find((contact) => contact.nama === nama);
